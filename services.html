@@ -1,0 +1,258 @@
+<!-- I have already made navigation bar so please watch part 1 of this series I am just going to copy all the code  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreeja Makeup</title>
+
+    <!-- adding css  -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- about css  -->
+    <link rel="stylesheet" href="./css/porfolio.css">
+
+    <!-- mediaQuery css  -->
+    <link rel="stylesheet" href="./css/MediaQuery.css">
+
+    <!-- fontawesome  -->
+    <script src="https://kit.fontawesome.com/7a6c6b42a6.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .service-card {
+            transition: all 0.3s ease;
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 100%;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(209, 77, 114, 0.15);
+        }
+        .card-img-top {
+            height: 500px;
+            object-fit: cover;
+        }
+        .card-title {
+            color: #d14d72;
+            font-weight: 600;
+        }
+        .section-title {
+            position: relative;
+            margin-bottom: 40px;
+            color: #d14d72;
+        }
+        .section-title:after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 3px;
+            background: #fcc8d1;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="#" class="logo">श्रीजा मेकअप स्टुडिओ</a>
+        <div class="menuToggle"></div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./protfolio.html">protfolio</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="tel:+919309855767" id="NavNum">+91 9309855767</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="sectionFirst">
+        <h1>Porfolio</h1>
+
+        <!-- transparent Img -->
+        <section class="transform-img">
+            <img src="./img/background180.svg" alt="">
+        </section>
+    </section>
+
+    <!-- gallery -->
+    <div class="gallery">
+        <!-- <div class="img"></div> -->
+        <img src="./img/1.jpg" alt="">
+        <img src="./img/2.jpg" alt="">
+        <img src="./img/3.jpg" alt="">
+        <img src="./img/4.jpg" alt="">
+        <img src="./img/5.jpg" alt="">
+        <img src="./img/6.jpg" alt="">
+        <img src="./img/7.jpg" alt="">
+    </div>
+   
+
+
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title">Our Services</h2>
+            <p class="text-center text-muted mb-5">Professional makeup services for every occasion</p>
+            
+            <div class="row g-4">
+                <!-- Service 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card h-100">
+                        <img src="img/MK3.png" class="card-img-top" alt="Wedding Makeup">
+                        <div class="card-body">
+                            <h5 class="card-title">Wedding Makeup</h5>
+                            <p class="card-text">Wedding makeup isn't just about colors and brushes—it's the art of enhancing the bride's natural glow.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card h-100">
+                        <img src="img/MK9.png" class="card-img-top" alt="Party Makeup">
+                        <div class="card-body">
+                            <h5 class="card-title">Party Makeup</h5>
+                            <p class="card-text">Party makeup is not just a look—it's a vibe, a sparkle, a bold step into the spotlight.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card h-100">
+                        <img src="img/MK40.jpg" class="card-img-top" alt="Fashion Makeup">
+                        <div class="card-body">
+                            <h5 class="card-title">Fashion Makeup</h5>
+                            <p class="card-text">Fashion makeup is where creativity meets confidence—bold, fearless, and runway ready.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card h-100">
+                        <img src="img/MK41.png" class="card-img-top" alt="Photo Makeup">
+                        <div class="card-body">
+                            <h5 class="card-title">Photo Makeup</h5>
+                            <p class="card-text">Photo makeup is the art of flawless perfection—designed to capture beauty in every frame.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card h-100">
+                        <img src="img/MK20.jpeg" class="card-img-top" alt="Mehandi">
+                        <div class="card-body">
+                            <h5 class="card-title">Mehandi</h5>
+                            <p class="card-text">Mehandi makeup blends tradition with a radiant glow for your special occasions.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card h-100">
+                        <img src="img/MK21.png" class="card-img-top" alt="Hair Style">
+                        <div class="card-body">
+                            <h5 class="card-title">Hair Styling</h5>
+                            <p class="card-text">A perfect hairstyle is about attitude, elegance, and turning heads without saying a word.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- discount section  -->
+    <section class="DiscountSection">
+
+        <div class="img">
+            <img src="./img/25off.png" alt="">
+        </div>
+
+        <div class="textinfo">
+            <h2>Book Your Appointment Now And Get 25% Off</h2>
+            <p>Awesome Monsoon Sale - 25% Off on All Professional Make Up only 5$</p>
+        </div>
+
+        <a href="#">BOOK AN APPINTMENT</a>
+    </section>
+
+    <!-- before and After  -->
+    
+
+    <div class="beforefooter">
+        <div class="box">
+            <div class="logo">Shreeja Makeup Studio</div>
+            <div class="bf-text">Govind Jadhav</div>
+            <p class="para">I am Govind Jadhav, a professional makeup artist with over five years of hands-on experience in 
+                the beauty and cosmetics industry. My expertise spans bridal, editorial, fashion, and special effects makeup, 
+                where I combine creativity with precision to enhance natural beauty and bring artistic visions to life. </p>
+
+            
+            
+        </div>
+
+        <div class="box">
+            <div class="bf-text">Quick Links</div>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./protfolio.html">protfolio</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+
+            <div class="bf-text">Follow Us</div>
+            <div class="icons">
+                <a href="https://www.facebook.com/govind.jadhav.94214508" target="_blank" class="fa-brands fa-facebook-f"></a>
+                <a href="#" class="fa-brands fa-google"></a>
+                <a href="https://www.instagram.com/makeup_artist_govind" target="_blank" class="fa-brands fa-instagram"></a>
+                <!-- <a href="#" class="fa-brands fa-youtube"></a> -->
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="bf-text">Say Hi! </div>
+            <ul class="SayHi">
+                <li><a href="mailto:rahultelbhare1800@gamil.com">rahultelbhare1800@gamil.com</a></li>
+                
+            </ul>
+
+            <div class="bf-text">Call Us</div>
+            <ul class="SayHi">
+                <li><a href="tel:+919309855767">Phone: 9309855767</a></li>
+            </ul>
+
+            <div class="bf-text">Find Us</div>
+
+            <div class="address">
+                Infront of K.K.M. College, Bypass road Manwat.
+            </div>
+
+        </div>
+    </div>
+
+    <!-- footer  -->
+    <footer>
+        <div class="fbox">Designed by Rahul Telbhare <a href="tel: +919623967089" style="color: white;">9623967089</a></div>
+        <div class="fbox">Powered By Shreeja Makeup Studio</div>
+    </footer>
+
+    <!-- js  -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
